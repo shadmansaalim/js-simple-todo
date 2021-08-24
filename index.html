@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/3f16fb12e4.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(https://www.icgroupinc.com/wp-content/uploads/2016/09/background-work.jpg);">
+    <main>
+        <section class="mt-5">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col col-lg-9 col-xl-7">
+                        <div class="card rounded-3" style="background-color: rgb(28, 71, 95);">
+                            <div class="card-body p-4">
+
+                                <h4 class="text-center text-white my-3 pb-3">Plan your day - Make a
+                                    <strong>TODO</strong> List
+                                </h4>
+
+                                <div class="d-flex justify-content-center align-items-center mb-4 pb-2">
+                                    <div>
+                                        <div class="form-outline">
+                                            <input type="text" id="user-task" class="form-control" />
+
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-3">
+                                        <button type="submit" class="btn btn-primary" onclick="addTask()">Save</button>
+                                    </div>
+
+
+                                </div>
+
+                                <table class="table mb-4">
+                                    <thead>
+                                        <tr class="text-white">
+                                            <th scope="col">Todo item</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="task-container" class="text-white">
+                                        <tr>
+                                            <th scope="row">Buy groceries for next week</th>
+
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete <i
+                                                        class="fas fa-trash"></i></button>
+                                                <button type="submit"
+                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <th scope="row">Complete Monday's Assignment</th>
+
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete <i
+                                                        class="fas fa-trash"></i></button>
+                                                <button type="submit"
+                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sign Up for Online Course</th>
+
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete <i
+                                                        class="fas fa-trash"></i></button>
+                                                <button type="submit"
+                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
