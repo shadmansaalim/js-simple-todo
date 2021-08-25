@@ -36,8 +36,9 @@
 
                                 <div class="d-flex justify-content-center align-items-center mb-4 pb-2">
                                     <div>
-                                        <div class="form-outline">
-                                            <input type="text" id="user-task" class="form-control" />
+                                        <div class="form-outline" style="width: 240px;">
+                                            <input type="text" id="user-task" class="form-control"
+                                                placeholder="Enter your task" />
 
                                         </div>
                                     </div>
@@ -46,49 +47,19 @@
                                         <button type="submit" class="btn btn-primary" onclick="addTask()">Save</button>
                                     </div>
 
-
                                 </div>
 
                                 <table class="table mb-4">
                                     <thead>
                                         <tr class="text-white">
                                             <th scope="col">Todo item</th>
-                                            <th scope="col">Actions</th>
+                                            <th scope="col" class="text-end">Actions</th>
+
+
                                         </tr>
                                     </thead>
                                     <tbody id="task-container" class="text-white">
-                                        <tr>
-                                            <th scope="row">Buy groceries for next week</th>
 
-                                            <td>
-                                                <button type="submit" class="btn btn-danger">Delete <i
-                                                        class="fas fa-trash"></i></button>
-                                                <button type="submit"
-                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <th scope="row">Complete Monday's Assignment</th>
-
-                                            <td>
-                                                <button type="submit" class="btn btn-danger">Delete <i
-                                                        class="fas fa-trash"></i></button>
-                                                <button type="submit"
-                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Sign Up for Online Course</th>
-
-                                            <td>
-                                                <button type="submit" class="btn btn-danger">Delete <i
-                                                        class="fas fa-trash"></i></button>
-                                                <button type="submit"
-                                                    class="btn btn-success ms-md-1 mt-2 mt-md-0">Finished</button>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
 
