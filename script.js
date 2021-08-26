@@ -1,11 +1,13 @@
+//Task List Container
+const taskContainer = document.getElementById('task-container');
+
+//Function to add task
 function addTask() {
 
-
-
-    const taskContainer = document.getElementById('task-container');
     const userInput = document.getElementById('user-task');
     const userTask = userInput.value;
 
+    //Add task if input field is not empty
     if (userTask != '') {
         const tr = document.createElement('tr');
 
@@ -42,13 +44,13 @@ function addTask() {
     userInput.value = '';
 
 
+    //Delete and Done button functions
 
     const deleteButton = document.getElementsByClassName('btn-delete');
     const finishedButton = document.getElementsByClassName('btn-done');
 
     for (btn of deleteButton) {
         btn.addEventListener('click', function (event) {
-            console.log(event.target.parentNode.parentNode);
             taskContainer.removeChild(event.target.parentNode.parentNode.parentNode);
         })
     }
@@ -57,10 +59,9 @@ function addTask() {
         btn.addEventListener('click', function (event) {
             event.target.parentNode.parentNode.innerHTML = `
         <button type="submit"
-        class="btn btn-primary ms-md-1 mt-2 mt-md-0">Completed</i></button>`;
+        class="btn btn-primary">Completed</i></button>`;
         })
     }
-
 }
 
 
